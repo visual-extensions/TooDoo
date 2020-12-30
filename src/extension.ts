@@ -3,11 +3,11 @@ import * as vscode from "vscode";
 export function activate(context: vscode.ExtensionContext) {
   console.log('Congratulations, your extension "toodoo" is now active!');
 
-  let disposable = vscode.commands.registerCommand("toodoo.helloWorld", () => {
-    vscode.window.showInformationMessage("Hello World from TooDoo!");
-  });
-
-  context.subscriptions.push(disposable);
+  context.subscriptions.push(
+    vscode.commands.registerCommand("toodoo.helloWorld", () => {
+      vscode.window.showInformationMessage("How was your day?", "good", "bad");
+    })
+  );
 }
 
 export function deactivate() {}
