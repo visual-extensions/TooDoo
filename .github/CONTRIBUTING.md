@@ -9,7 +9,7 @@ PRs are **greatly** appreciated, and please don't hesitate to change anything yo
 - [Husky](https://github.com/typicode/husky) is used to limit pull request names.
 - [Prettier](https://prettier.io/) is used as our Linter.
 - [Pull](https://github.com/wei/pull), to keep your fork up to date.
-- [Yarn][https://yarnpkg.com/] is the preferred package manager. When contributing, you should use Yarn over npm.
+- [Yarn](https://yarnpkg.com/) is the preferred package manager. When contributing, you should use Yarn over npm.
 
 ## Local Deployment Instructions
 
