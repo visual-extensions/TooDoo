@@ -1,8 +1,7 @@
 import * as vscode from "vscode";
 
 export function activate(context: vscode.ExtensionContext) {
-  console.log('Congratulations, your extension "toodoo" is now active!');
-
+  console.log("TooDoo started!");
   context.subscriptions.push(
     vscode.commands.registerCommand("toodoo.helloWorld", async () => {
       const answer = await vscode.window.showInformationMessage(
@@ -17,6 +16,11 @@ export function activate(context: vscode.ExtensionContext) {
         console.log(answer);
       }
     })
+  );
+  const webview = vscode.window.createWebviewPanel(
+    "tooDoo",
+    "TooDoo",
+    vscode.ViewColumn.One
   );
 }
 
